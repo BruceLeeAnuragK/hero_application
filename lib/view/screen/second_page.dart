@@ -13,6 +13,7 @@ class _SecondPageState extends State<SecondPage> {
     int index = ModalRoute.of(context)!.settings.arguments as int;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.green,
         title: Text("Second Page"),
         centerTitle: true,
       ),

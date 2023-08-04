@@ -13,6 +13,7 @@ class _ThirdPageState extends State<ThirdPage> {
     int indexData = ModalRoute.of(context)!.settings.arguments as int;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.red,
         title: Text("Third Page"),
         centerTitle: true,
       ),
@@ -27,7 +28,7 @@ class _ThirdPageState extends State<ThirdPage> {
               leading: Hero(
                 tag: index,
                 child: CircleAvatar(
-                  backgroundColor: Colors.orange,
+                  backgroundColor: Colors.red,
                   child: Text(
                     "${indexData}",
                     style: TextStyle(
